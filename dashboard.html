@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - NotesHub Elite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <a href="index.html" style="color: inherit;">NotesHub Elite</a>
+                </div>
+                <nav class="nav-list">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="marketplace.html" class="nav-link">Marketplace</a>
+                    <a href="publish.html" class="nav-link">Publish</a>
+                    <a href="dashboard.html" class="nav-link active">Dashboard</a>
+                    <a href="profile.html" class="nav-link">Profile</a>
+                </nav>
+                <div class="nav-actions">
+                    <button class="btn btn--outline btn--sm" onclick="logout()">Logout</button>
+                </div>
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dashboard Content -->
+    <section class="dashboard-section">
+        <div class="container">
+            <div class="dashboard-header">
+                <div class="welcome-message">
+                    <h1>Welcome back, <span id="userName">Rahul Kumar</span>! 👋</h1>
+                    <p>Here's what's happening with your account today.</p>
+                </div>
+                <div class="quick-actions">
+                    <a href="publish.html" class="btn btn--primary">
+                        <i class="fas fa-plus"></i>
+                        Upload Notes
+                    </a>
+                    <a href="marketplace.html" class="btn btn--outline">
+                        <i class="fas fa-search"></i>
+                        Browse Notes
+                    </a>
+                </div>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>12</h3>
+                        <p>Notes Published</p>
+                        <span class="stat-change positive">+2 this month</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>847</h3>
+                        <p>Total Sales</p>
+                        <span class="stat-change positive">+23 this week</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>₹45,230</h3>
+                        <p>Total Earnings</p>
+                        <span class="stat-change positive">+₹3,420 this month</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>4.8</h3>
+                        <p>Average Rating</p>
+                        <span class="stat-change positive">+0.2 this month</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Content Grid -->
+            <div class="dashboard-grid">
+                <!-- Recent Activity -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h2>Recent Activity</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>New purchase</strong> - Data Structures Notes</p>
+                                <span class="activity-time">2 hours ago</span>
+                            </div>
+                            <div class="activity-amount">+₹299</div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>New review</strong> - Organic Chemistry Notes</p>
+                                <span class="activity-time">5 hours ago</span>
+                            </div>
+                            <div class="activity-rating">★ 5.0</div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-upload"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>Notes uploaded</strong> - Machine Learning Basics</p>
+                                <span class="activity-time">1 day ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>New purchase</strong> - Calculus Problem Sets</p>
+                                <span class="activity-time">2 days ago</span>
+                            </div>
+                            <div class="activity-amount">+₹199</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top Performing Notes -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h2>Top Performing Notes</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="notes-list">
+                        <div class="note-item">
+                            <div class="note-info">
+                                <h4>Complete Data Structures & Algorithms</h4>
+                                <p>245 sales • ₹299 each</p>
+                            </div>
+                            <div class="note-stats">
+                                <span class="sales-count">245 sales</span>
+                                <span class="rating">★ 4.8</span>
+                            </div>
+                        </div>
+                        <div class="note-item">
+                            <div class="note-info">
+                                <h4>Organic Chemistry Mechanisms</h4>
+                                <p>189 sales • ₹199 each</p>
+                            </div>
+                            <div class="note-stats">
+                                <span class="sales-count">189 sales</span>
+                                <span class="rating">★ 4.7</span>
+                            </div>
+                        </div>
+                        <div class="note-item">
+                            <div class="note-info">
+                                <h4>Machine Learning Fundamentals</h4>
+                                <p>156 sales • ₹349 each</p>
+                            </div>
+                            <div class="note-stats">
+                                <span class="sales-count">156 sales</span>
+                                <span class="rating">★ 4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Earnings Chart -->
+                <div class="dashboard-card chart-card">
+                    <div class="card-header">
+                        <h2>Earnings Overview</h2>
+                        <select class="time-selector">
+                            <option>Last 7 days</option>
+                            <option>Last 30 days</option>
+                            <option>Last 3 months</option>
+                        </select>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="earningsChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Recent Purchases -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h2>Recent Purchases</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="purchases-list">
+                        <div class="purchase-item">
+                            <div class="purchase-info">
+                                <h4>Advanced Physics Problems</h4>
+                                <p>by Dr. Sarah Khan • AIIMS Delhi</p>
+                            </div>
+                            <div class="purchase-details">
+                                <span class="price">₹249</span>
+                                <span class="date">Jan 15, 2025</span>
+                            </div>
+                        </div>
+                        <div class="purchase-item">
+                            <div class="purchase-info">
+                                <h4>Business Strategy Case Studies</h4>
+                                <p>by Amit Patel • IIM Ahmedabad</p>
+                            </div>
+                            <div class="purchase-details">
+                                <span class="price">₹299</span>
+                                <span class="date">Jan 12, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

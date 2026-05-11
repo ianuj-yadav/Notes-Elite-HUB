@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publish Notes - NotesHub Elite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <a href="index.html" style="color: inherit;">NotesHub Elite</a>
+                </div>
+                <nav class="nav-list">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="marketplace.html" class="nav-link">Marketplace</a>
+                    <a href="publish.html" class="nav-link active">Publish</a>
+                    <a href="dashboard.html" class="nav-link">Dashboard</a>
+                    <a href="profile.html" class="nav-link">Profile</a>
+                </nav>
+                <div class="nav-actions">
+                    <a href="login.html" class="btn btn--outline btn--sm">Login</a>
+                </div>
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Publish Section -->
+    <section class="publish-section">
+        <div class="container">
+            <div class="publish-header">
+                <h1>Upload Your Study Materials</h1>
+                <p>Share your knowledge and start earning from your notes</p>
+            </div>
+
+            <div class="publish-container">
+                <div class="publish-form-container">
+                    <form class="publish-form" id="publishForm" enctype="multipart/form-data">
+                        <!-- File Upload Section -->
+                        <div class="form-section">
+                            <h2>Upload Files</h2>
+                            <div class="file-upload-area" id="fileUploadArea">
+                                <div class="upload-icon">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                </div>
+                                <h3>Drag and drop your files here</h3>
+                                <p>or <button type="button" class="upload-btn">browse files</button></p>
+                                <input type="file" id="fileInput" multiple accept=".pdf,.doc,.docx,.ppt,.pptx,.txt">
+                                <p class="upload-info">Supported formats: PDF, DOC, DOCX, PPT, PPTX, TXT (Max 50MB per file)</p>
+                            </div>
+                            <div class="uploaded-files" id="uploadedFiles"></div>
+                        </div>
+
+                        <!-- Note Details Section -->
+                        <div class="form-section">
+                            <h2>Note Details</h2>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="noteTitle">Title *</label>
+                                    <input type="text" id="noteTitle" name="title" placeholder="Enter note title" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="noteCategory">Category *</label>
+                                    <select id="noteCategory" name="category" required>
+                                        <option value="">Select category</option>
+                                        <option value="engineering">Engineering</option>
+                                        <option value="medical">Medical</option>
+                                        <option value="business">Business</option>
+                                        <option value="computer-science">Computer Science</option>
+                                        <option value="mathematics">Mathematics</option>
+                                        <option value="physics">Physics</option>
+                                        <option value="chemistry">Chemistry</option>
+                                        <option value="literature">Literature</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="subject">Subject *</label>
+                                    <input type="text" id="subject" name="subject" placeholder="e.g., Data Structures" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="university">University/Institution *</label>
+                                    <input type="text" id="university" name="university" placeholder="e.g., IIT Delhi" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="description">Description *</label>
+                                <textarea id="description" name="description" placeholder="Describe your notes, what topics they cover, and what makes them valuable..." required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tags">Tags</label>
+                                <input type="text" id="tags" name="tags" placeholder="algorithms, data structures, programming (separate with commas)">
+                                <small>Add relevant tags to help students find your notes</small>
+                            </div>
+                        </div>
+
+                        <!-- Pricing Section -->
+                        <div class="form-section">
+                            <h2>Pricing</h2>
+                            <div class="pricing-container">
+                                <div class="form-group">
+                                    <label for="price">Price (₹) *</label>
+                                    <input type="number" id="price" name="price" min="50" max="2000" placeholder="299" required>
+                                    <small>Recommended price range: ₹50 - ₹500</small>
+                                </div>
+                                <div class="pricing-suggestion">
+                                    <h4>Price Suggestions</h4>
+                                    <div class="suggestion-tags">
+                                        <button type="button" class="suggestion-tag" data-price="99">₹99 - Basic</button>
+                                        <button type="button" class="suggestion-tag" data-price="199">₹199 - Standard</button>
+                                        <button type="button" class="suggestion-tag" data-price="299">₹299 - Premium</button>
+                                        <button type="button" class="suggestion-tag" data-price="399">₹399 - Comprehensive</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Preview Section -->
+                        <div class="form-section">
+                            <h2>Preview Settings</h2>
+                            <div class="preview-options">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="allowPreview" checked>
+                                    <span>Allow students to preview first few pages</span>
+                                </label>
+                                <div class="form-group">
+                                    <label for="previewPages">Number of preview pages</label>
+                                    <select id="previewPages" name="previewPages">
+                                        <option value="2">2 pages</option>
+                                        <option value="3" selected>3 pages</option>
+                                        <option value="5">5 pages</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Terms and Submit -->
+                        <div class="form-section">
+                            <div class="terms-section">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="termsAgreed" required>
+                                    <span>I agree to the <a href="#">Seller Terms & Conditions</a> and confirm that I own the rights to these materials</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="qualityAssurance">
+                                    <span>I certify that these notes are original, accurate, and of high quality</span>
+                                </label>
+                            </div>
+
+                            <div class="submit-section">
+                                <button type="button" class="btn btn--outline btn--lg">Save as Draft</button>
+                                <button type="submit" class="btn btn--primary btn--lg">Publish Notes</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Publishing Guidelines Sidebar -->
+                <div class="guidelines-sidebar">
+                    <div class="guideline-card">
+                        <h3><i class="fas fa-lightbulb"></i> Publishing Tips</h3>
+                        <ul>
+                            <li>Use clear, descriptive titles</li>
+                            <li>Include detailed descriptions</li>
+                            <li>Add relevant tags for better discovery</li>
+                            <li>Price competitively based on content quality</li>
+                            <li>Ensure files are well-organized and readable</li>
+                        </ul>
+                    </div>
+
+                    <div class="guideline-card">
+                        <h3><i class="fas fa-chart-line"></i> Earning Potential</h3>
+                        <div class="earning-example">
+                            <div class="example-item">
+                                <span>100 sales × ₹299</span>
+                                <span>₹29,900</span>
+                            </div>
+                            <div class="example-item">
+                                <span>Platform fee (10%)</span>
+                                <span>- ₹2,990</span>
+                            </div>
+                            <div class="example-item total">
+                                <span>Your earnings</span>
+                                <span>₹26,910</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guideline-card">
+                        <h3><i class="fas fa-star"></i> Quality Standards</h3>
+                        <ul>
+                            <li>Clear handwriting or typed content</li>
+                            <li>Well-structured and organized</li>
+                            <li>Accurate and up-to-date information</li>
+                            <li>Proper formatting and readability</li>
+                            <li>Original content only</li>
+                        </ul>
+                    </div>
+
+                    <div class="guideline-card">
+                        <h3><i class="fas fa-shield-alt"></i> Content Policy</h3>
+                        <ul>
+                            <li>No copyrighted material</li>
+                            <li>Original work or properly attributed</li>
+                            <li>No exam questions or answer keys</li>
+                            <li>Educational content only</li>
+                            <li>Respectful and appropriate language</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

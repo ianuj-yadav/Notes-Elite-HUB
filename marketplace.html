@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace - NotesHub Elite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <a href="index.html" style="color: inherit;">NotesHub Elite</a>
+                </div>
+                <nav class="nav-list">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="marketplace.html" class="nav-link active">Marketplace</a>
+                    <a href="publish.html" class="nav-link">Publish</a>
+                    <a href="dashboard.html" class="nav-link">Dashboard</a>
+                    <a href="profile.html" class="nav-link">Profile</a>
+                </nav>
+                <div class="nav-actions">
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search notes...">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">3</span>
+                    </div>
+                    <a href="login.html" class="btn btn--outline btn--sm">Login</a>
+                </div>
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Marketplace Content -->
+    <section class="marketplace-section">
+        <div class="container">
+            <div class="marketplace-header">
+                <h1>Study Materials Marketplace</h1>
+                <p>Find high-quality notes from top students and universities</p>
+            </div>
+
+            <div class="marketplace-container">
+                <!-- Filters Sidebar -->
+                <aside class="filters-sidebar">
+                    <div class="filter-section">
+                        <h3>Categories</h3>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="all" checked>
+                                <span>All Categories</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="engineering">
+                                <span>Engineering</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="medical">
+                                <span>Medical</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="business">
+                                <span>Business</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="computer-science">
+                                <span>Computer Science</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="mathematics">
+                                <span>Mathematics</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3>Price Range</h3>
+                        <div class="price-range">
+                            <input type="range" class="price-slider" min="0" max="1000" value="500">
+                            <div class="price-labels">
+                                <span>₹0</span>
+                                <span>₹1000+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3>Rating</h3>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" name="rating" value="5">
+                                <span>★★★★★ 5.0</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="rating" value="4">
+                                <span>★★★★☆ 4.0+</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="rating" value="3">
+                                <span>★★★☆☆ 3.0+</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3>University</h3>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" name="university" value="iit">
+                                <span>IIT</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="university" value="iim">
+                                <span>IIM</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="university" value="aiims">
+                                <span>AIIMS</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="university" value="du">
+                                <span>Delhi University</span>
+                            </label>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Notes Grid -->
+                <main class="notes-content">
+                    <div class="content-header">
+                        <div class="results-info">
+                            <span>Showing <strong>1-12</strong> of <strong>2,847</strong> results</span>
+                        </div>
+                        <div class="sort-options">
+                            <label>Sort by:</label>
+                            <select class="sort-select">
+                                <option value="relevance">Most Relevant</option>
+                                <option value="rating">Highest Rated</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="newest">Newest First</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="notes-grid">
+                        <div class="note-card">
+                            <div class="note-preview">
+                                <div class="note-image">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="note-category">Computer Science</div>
+                                <button class="wishlist-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="note-content">
+                                <h3 class="note-title">Complete Data Structures & Algorithms</h3>
+                                <div class="note-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span>4.8 (245 reviews)</span>
+                                </div>
+                                <p class="note-seller">by Rahul Kumar • IIT Delhi</p>
+                                <div class="note-details">
+                                    <span class="note-pages">120 pages</span>
+                                    <span class="note-format">PDF</span>
+                                </div>
+                                <div class="note-price">₹299</div>
+                            </div>
+                            <div class="note-actions">
+                                <button class="btn btn--primary btn--sm add-to-cart">Add to Cart</button>
+                                <button class="btn btn--outline btn--sm preview-btn">Preview</button>
+                            </div>
+                        </div>
+
+                        <div class="note-card">
+                            <div class="note-preview">
+                                <div class="note-image">
+                                    <i class="fas fa-atom"></i>
+                                </div>
+                                <div class="note-category">Chemistry</div>
+                                <button class="wishlist-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="note-content">
+                                <h3 class="note-title">Organic Chemistry Mechanisms</h3>
+                                <div class="note-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span>4.7 (189 reviews)</span>
+                                </div>
+                                <p class="note-seller">by Priya Sharma • Delhi University</p>
+                                <div class="note-details">
+                                    <span class="note-pages">85 pages</span>
+                                    <span class="note-format">PDF</span>
+                                </div>
+                                <div class="note-price">₹199</div>
+                            </div>
+                            <div class="note-actions">
+                                <button class="btn btn--primary btn--sm add-to-cart">Add to Cart</button>
+                                <button class="btn btn--outline btn--sm preview-btn">Preview</button>
+                            </div>
+                        </div>
+
+                        <div class="note-card">
+                            <div class="note-preview">
+                                <div class="note-image">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="note-category">Business</div>
+                                <button class="wishlist-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="note-content">
+                                <h3 class="note-title">Financial Accounting Fundamentals</h3>
+                                <div class="note-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span>4.9 (312 reviews)</span>
+                                </div>
+                                <p class="note-seller">by Amit Patel • IIM Ahmedabad</p>
+                                <div class="note-details">
+                                    <span class="note-pages">95 pages</span>
+                                    <span class="note-format">PDF</span>
+                                </div>
+                                <div class="note-price">₹249</div>
+                            </div>
+                            <div class="note-actions">
+                                <button class="btn btn--primary btn--sm add-to-cart">Add to Cart</button>
+                                <button class="btn btn--outline btn--sm preview-btn">Preview</button>
+                            </div>
+                        </div>
+
+                        <!-- Repeat similar structure for more notes -->
+                        <div class="note-card">
+                            <div class="note-preview">
+                                <div class="note-image">
+                                    <i class="fas fa-heartbeat"></i>
+                                </div>
+                                <div class="note-category">Medical</div>
+                                <button class="wishlist-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="note-content">
+                                <h3 class="note-title">Human Anatomy & Physiology</h3>
+                                <div class="note-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span>4.6 (156 reviews)</span>
+                                </div>
+                                <p class="note-seller">by Dr. Sarah Khan • AIIMS Delhi</p>
+                                <div class="note-details">
+                                    <span class="note-pages">200 pages</span>
+                                    <span class="note-format">PDF</span>
+                                </div>
+                                <div class="note-price">₹399</div>
+                            </div>
+                            <div class="note-actions">
+                                <button class="btn btn--primary btn--sm add-to-cart">Add to Cart</button>
+                                <button class="btn btn--outline btn--sm preview-btn">Preview</button>
+                            </div>
+                        </div>
+
+                        <div class="note-card">
+                            <div class="note-preview">
+                                <div class="note-image">
+                                    <i class="fas fa-calculator"></i>
+                                </div>
+                                <div class="note-category">Mathematics</div>
+                                <button class="wishlist-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="note-content">
+                                <h3 class="note-title">Advanced Calculus Problems</h3>
+                                <div class="note-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span>4.5 (98 reviews)</span>
+                                </div>
+                                <p class="note-seller">by Prof. Anand • IISc Bangalore</p>
+                                <div class="note-details">
+                                    <span class="note-pages">150 pages</span>
+                                    <span class="note-format">PDF</span>
+                                </div>
+                                <div class="note-price">₹179</div>
+                            </div>
+                            <div class="note-actions">
+                                <button class="btn btn--primary btn--sm add-to-cart">Add to Cart</button>
+                                <button class="btn btn--outline btn--sm preview-btn">Preview</button>
+                            </div>
+                        </div>
+
+                        <div class="note-card">
+                            <div class="note-preview">
+                                <div class="note-image">
+                                    <i class="fas fa-atom"></i>
+                                </div>
+                                <div class="note-category">Physics</div>
+                                <button class="wishlist-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="note-content">
+                                <h3 class="note-title">Quantum Physics Fundamentals</h3>
+                                <div class="note-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span>4.7 (134 reviews)</span>
+                                </div>
+                                <p class="note-seller">by Dr. Ravi Mehta • IIT Mumbai</p>
+                                <div class="note-details">
+                                    <span class="note-pages">180 pages</span>
+                                    <span class="note-format">PDF</span>
+                                </div>
+                                <div class="note-price">₹329</div>
+                            </div>
+                            <div class="note-actions">
+                                <button class="btn btn--primary btn--sm add-to-cart">Add to Cart</button>
+                                <button class="btn btn--outline btn--sm preview-btn">Preview</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="pagination-btn prev" disabled>
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="pagination-btn active">1</button>
+                        <button class="pagination-btn">2</button>
+                        <button class="pagination-btn">3</button>
+                        <span class="pagination-dots">...</span>
+                        <button class="pagination-btn">15</button>
+                        <button class="pagination-btn next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Modal -->
+    <div class="modal cart-modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Shopping Cart</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="cart-items">
+                <div class="cart-item">
+                    <div class="item-info">
+                        <h4>Complete Data Structures & Algorithms</h4>
+                        <p>by Rahul Kumar</p>
+                    </div>
+                    <div class="item-price">₹299</div>
+                    <button class="remove-item">×</button>
+                </div>
+                <div class="cart-item">
+                    <div class="item-info">
+                        <h4>Organic Chemistry Mechanisms</h4>
+                        <p>by Priya Sharma</p>
+                    </div>
+                    <div class="item-price">₹199</div>
+                    <button class="remove-item">×</button>
+                </div>
+            </div>
+            <div class="cart-total">
+                <div class="total-line">
+                    <span>Subtotal:</span>
+                    <span>₹498</span>
+                </div>
+                <div class="total-line">
+                    <span>Processing Fee:</span>
+                    <span>₹25</span>
+                </div>
+                <div class="total-line final">
+                    <span>Total:</span>
+                    <span>₹523</span>
+                </div>
+            </div>
+            <div class="cart-actions">
+                <button class="btn btn--outline btn--full">Continue Shopping</button>
+                <button class="btn btn--primary btn--full">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

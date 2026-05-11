@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - NotesHub Elite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <a href="index.html" style="color: inherit;">NotesHub Elite</a>
+                </div>
+                <nav class="nav-list">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="marketplace.html" class="nav-link">Marketplace</a>
+                    <a href="publish.html" class="nav-link">Publish</a>
+                    <a href="dashboard.html" class="nav-link">Dashboard</a>
+                    <a href="profile.html" class="nav-link active">Profile</a>
+                </nav>
+                <div class="nav-actions">
+                    <button class="btn btn--outline btn--sm" onclick="logout()">Logout</button>
+                </div>
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-container">
+                <!-- Profile Sidebar -->
+                <aside class="profile-sidebar">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <img src="" alt="Profile Picture" id="profilePicture">
+                            <div class="avatar-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <button class="change-avatar-btn">
+                                <i class="fas fa-camera"></i>
+                            </button>
+                        </div>
+                        <div class="profile-info">
+                            <h2 id="profileName">Rahul Kumar</h2>
+                            <p id="profileRole">Premium Seller</p>
+                            <div class="profile-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>4.8/5 (245 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">12</div>
+                            <div class="stat-label">Notes Published</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">847</div>
+                            <div class="stat-label">Total Sales</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">₹45,230</div>
+                            <div class="stat-label">Total Earnings</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Satisfaction Rate</div>
+                        </div>
+                    </div>
+
+                    <div class="profile-menu">
+                        <button class="menu-item active" data-tab="personal">
+                            <i class="fas fa-user"></i>
+                            Personal Information
+                        </button>
+                        <button class="menu-item" data-tab="account">
+                            <i class="fas fa-cog"></i>
+                            Account Settings
+                        </button>
+                        <button class="menu-item" data-tab="notifications">
+                            <i class="fas fa-bell"></i>
+                            Notifications
+                        </button>
+                        <button class="menu-item" data-tab="payment">
+                            <i class="fas fa-credit-card"></i>
+                            Payment Methods
+                        </button>
+                        <button class="menu-item" data-tab="security">
+                            <i class="fas fa-lock"></i>
+                            Security
+                        </button>
+                    </div>
+                </aside>
+
+                <!-- Profile Content -->
+                <main class="profile-content">
+                    <!-- Personal Information Tab -->
+                    <div class="profile-tab active" id="personal">
+                        <div class="tab-header">
+                            <h2>Personal Information</h2>
+                            <p>Update your personal details and profile information</p>
+                        </div>
+
+                        <form class="profile-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" value="Rahul">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName" value="Kumar">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" value="rahul.kumar@example.com">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" value="+91 9876543210">
+                                </div>
+                                <div class="form-group">
+                                    <label for="dateOfBirth">Date of Birth</label>
+                                    <input type="date" id="dateOfBirth" name="dateOfBirth" value="1995-06-15">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="university">University/Institution</label>
+                                <input type="text" id="university" name="university" value="Indian Institute of Technology, Delhi">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="course">Course/Degree</label>
+                                    <input type="text" id="course" name="course" value="B.Tech Computer Science">
+                                </div>
+                                <div class="form-group">
+                                    <label for="graduationYear">Graduation Year</label>
+                                    <input type="number" id="graduationYear" name="graduationYear" value="2017">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bio">Bio</label>
+                                <textarea id="bio" name="bio" placeholder="Tell other students about yourself and your expertise">Computer Science graduate from IIT Delhi with expertise in Data Structures, Algorithms, and Software Development. Passionate about helping fellow students excel in their academic journey.</textarea>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="btn btn--outline">Cancel</button>
+                                <button type="submit" class="btn btn--primary">Save Changes</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Account Settings Tab -->
+                    <div class="profile-tab" id="account">
+                        <div class="tab-header">
+                            <h2>Account Settings</h2>
+                            <p>Manage your account preferences and visibility settings</p>
+                        </div>
+
+                        <form class="profile-form">
+                            <div class="form-section">
+                                <h3>Profile Visibility</h3>
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>Public Profile</h4>
+                                        <p>Allow other users to view your public profile</p>
+                                    </div>
+                                    <label class="toggle-switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>Show Contact Information</h4>
+                                        <p>Display your email and phone number to buyers</p>
+                                    </div>
+                                    <label class="toggle-switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>Seller Settings</h3>
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>Auto-approve Reviews</h4>
+                                        <p>Automatically publish reviews for your notes</p>
+                                    </div>
+                                    <label class="toggle-switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>Allow Direct Messages</h4>
+                                        <p>Let buyers contact you directly through the platform</p>
+                                    </div>
+                                    <label class="toggle-switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn--primary">Save Settings</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Notifications Tab -->
+                    <div class="profile-tab" id="notifications">
+                        <div class="tab-header">
+                            <h2>Notification Preferences</h2>
+                            <p>Choose how you want to be notified about platform activities</p>
+                        </div>
+
+                        <form class="profile-form">
+                            <div class="form-section">
+                                <h3>Email Notifications</h3>
+                                <div class="notification-group">
+                                    <div class="setting-item">
+                                        <div class="setting-info">
+                                            <h4>New Sales</h4>
+                                            <p>Get notified when someone purchases your notes</p>
+                                        </div>
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="setting-item">
+                                        <div class="setting-info">
+                                            <h4>New Reviews</h4>
+                                            <p>Get notified when someone reviews your notes</p>
+                                        </div>
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="setting-item">
+                                        <div class="setting-info">
+                                            <h4>Payment Updates</h4>
+                                            <p>Get notified about payment processing and payouts</p>
+                                        </div>
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>Marketing Communications</h3>
+                                <div class="notification-group">
+                                    <div class="setting-item">
+                                        <div class="setting-info">
+                                            <h4>Platform Updates</h4>
+                                            <p>Receive updates about new features and improvements</p>
+                                        </div>
+                                        <label class="toggle-switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="setting-item">
+                                        <div class="setting-info">
+                                            <h4>Tips & Best Practices</h4>
+                                            <p>Get tips on how to improve your sales and notes quality</p>
+                                        </div>
+                                        <label class="toggle-switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn--primary">Save Preferences</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Payment Methods Tab -->
+                    <div class="profile-tab" id="payment">
+                        <div class="tab-header">
+                            <h2>Payment Methods</h2>
+                            <p>Manage your payment methods for receiving earnings</p>
+                        </div>
+
+                        <div class="payment-methods">
+                            <div class="payment-method-card primary">
+                                <div class="method-info">
+                                    <div class="method-icon">
+                                        <i class="fas fa-university"></i>
+                                    </div>
+                                    <div class="method-details">
+                                        <h4>Bank Account</h4>
+                                        <p>HDFC Bank - **** **** **** 1234</p>
+                                        <span class="primary-badge">Primary</span>
+                                    </div>
+                                </div>
+                                <div class="method-actions">
+                                    <button class="btn btn--outline btn--sm">Edit</button>
+                                    <button class="btn btn--danger btn--sm">Remove</button>
+                                </div>
+                            </div>
+
+                            <div class="payment-method-card">
+                                <div class="method-info">
+                                    <div class="method-icon">
+                                        <i class="fab fa-paypal"></i>
+                                    </div>
+                                    <div class="method-details">
+                                        <h4>PayPal</h4>
+                                        <p>rahul.kumar@example.com</p>
+                                    </div>
+                                </div>
+                                <div class="method-actions">
+                                    <button class="btn btn--outline btn--sm">Set as Primary</button>
+                                    <button class="btn btn--danger btn--sm">Remove</button>
+                                </div>
+                            </div>
+
+                            <button class="add-payment-method">
+                                <i class="fas fa-plus"></i>
+                                Add New Payment Method
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Security Tab -->
+                    <div class="profile-tab" id="security">
+                        <div class="tab-header">
+                            <h2>Security Settings</h2>
+                            <p>Manage your account security and password settings</p>
+                        </div>
+
+                        <form class="profile-form">
+                            <div class="form-section">
+                                <h3>Change Password</h3>
+                                <div class="form-group">
+                                    <label for="currentPassword">Current Password</label>
+                                    <input type="password" id="currentPassword" name="currentPassword">
+                                </div>
+                                <div class="form-group">
+                                    <label for="newPassword">New Password</label>
+                                    <input type="password" id="newPassword" name="newPassword">
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirmNewPassword">Confirm New Password</label>
+                                    <input type="password" id="confirmNewPassword" name="confirmNewPassword">
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>Two-Factor Authentication</h3>
+                                <div class="security-option">
+                                    <div class="option-info">
+                                        <h4>SMS Authentication</h4>
+                                        <p>Receive verification codes via SMS</p>
+                                        <span class="status enabled">Enabled</span>
+                                    </div>
+                                    <button type="button" class="btn btn--outline btn--sm">Configure</button>
+                                </div>
+                                <div class="security-option">
+                                    <div class="option-info">
+                                        <h4>App Authentication</h4>
+                                        <p>Use an authenticator app for verification</p>
+                                        <span class="status disabled">Disabled</span>
+                                    </div>
+                                    <button type="button" class="btn btn--primary btn--sm">Enable</button>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn--primary">Update Security Settings</button>
+                            </div>
+                        </form>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

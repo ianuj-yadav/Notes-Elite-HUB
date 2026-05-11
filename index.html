@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotesHub Elite - Buy & Sell Study Materials</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    NotesHub Elite
+                </div>
+                <nav class="nav-list">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="marketplace.html" class="nav-link">Marketplace</a>
+                    <a href="publish.html" class="nav-link">Publish</a>
+                    <a href="dashboard.html" class="nav-link">Dashboard</a>
+                    <a href="profile.html" class="nav-link">Profile</a>
+                </nav>
+                <div class="nav-actions">
+                    <a href="login.html" class="btn btn--outline btn--sm">Login</a>
+                    <a href="signup.html" class="btn btn--primary btn--sm">Sign Up</a>
+                </div>
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="floating-element floating-element-1"></div>
+            <div class="floating-element floating-element-2"></div>
+            <div class="floating-element floating-element-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Turn Your Study Notes Into Passive Income</h1>
+                <p class="hero-subtitle">Join thousands of students who are monetizing their study materials and helping others succeed academically</p>
+                <div class="hero-cta">
+                    <a href="signup.html" class="btn btn--primary btn--lg">Start Selling Notes</a>
+                    <a href="marketplace.html" class="btn btn--secondary btn--lg">Browse Notes</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50,000+</span>
+                        <span class="stat-label">Active Students</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15,000+</span>
+                        <span class="stat-label">Study Materials</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">₹25L+</span>
+                        <span class="stat-label">Student Earnings</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Everything you need to succeed in the academic marketplace</h2>
+                <p class="section-subtitle">Comprehensive tools and features designed to help students buy and sell study materials effectively</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-upload"></i>
+                    </div>
+                    <h3 class="feature-title">Easy Upload System</h3>
+                    <p class="feature-description">Simple drag-and-drop interface to upload your study materials and set competitive prices</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="feature-title">Smart Discovery</h3>
+                    <p class="feature-description">Advanced search algorithms help students find exactly what they need quickly</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Secure Payments</h3>
+                    <p class="feature-description">Safe and reliable payment system with instant payouts to sellers</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="feature-title">Quality Assurance</h3>
+                    <p class="feature-description">Community-driven reviews ensure high-quality content and trusted sellers</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Mobile Friendly</h3>
+                    <p class="feature-description">Access your notes anywhere, anytime with our responsive mobile platform</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="feature-title">Analytics Dashboard</h3>
+                    <p class="feature-description">Track your sales, views, and earnings with comprehensive analytics dashboard</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple steps to start earning or learning</h2>
+            </div>
+            <div class="tab-container">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="selling">For Sellers</button>
+                    <button class="tab-btn" data-tab="buying">For Buyers</button>
+                </div>
+                <div class="process-tab active" id="selling">
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Upload your high-quality study materials</h4>
+                                <p>Upload your high-quality study materials in various formats</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Set competitive pricing</h4>
+                                <p>Choose competitive pricing based on content quality and demand</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Get discovered by students</h4>
+                                <p>Our AI algorithm promotes your content to interested students</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Earn money instantly</h4>
+                                <p>Receive instant payments when students purchase your notes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-tab" id="buying">
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Search for notes</h4>
+                                <p>Find notes by subject, university, or specific topics</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Check quality and reviews</h4>
+                                <p>Check quality, ratings, and seller reputation before buying</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Make secure purchase</h4>
+                                <p>Buy with confidence using our secure payment system</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Access immediately</h4>
+                                <p>Access your purchased notes immediately and study smarter</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Find notes for your specific field of study</h2>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card" onclick="window.location.href='marketplace.html?category=engineering'">
+                    <div class="category-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3 class="category-title">Engineering</h3>
+                    <p class="category-count">2,500+ Notes</p>
+                </div>
+                <div class="category-card" onclick="window.location.href='marketplace.html?category=medical'">
+                    <div class="category-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="category-title">Medical</h3>
+                    <p class="category-count">1,800+ Notes</p>
+                </div>
+                <div class="category-card" onclick="window.location.href='marketplace.html?category=business'">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="category-title">Business</h3>
+                    <p class="category-count">1,200+ Notes</p>
+                </div>
+                <div class="category-card" onclick="window.location.href='marketplace.html?category=computer-science'">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="category-title">Computer Science</h3>
+                    <p class="category-count">3,000+ Notes</p>
+                </div>
+                <div class="category-card" onclick="window.location.href='marketplace.html?category=mathematics'">
+                    <div class="category-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3 class="category-title">Mathematics</h3>
+                    <p class="category-count">900+ Notes</p>
+                </div>
+                <div class="category-card" onclick="window.location.href='marketplace.html?category=physics'">
+                    <div class="category-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3 class="category-title">Physics</h3>
+                    <p class="category-count">600+ Notes</p>
+                </div>
+                <div class="category-card" onclick="window.location.href='marketplace.html?category=chemistry'">
+                    <div class="category-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 class="category-title">Chemistry</h3>
+                    <p class="category-count">1,500+ Notes</p>
+                </div>
+                <div class="category-card" onclick="window.location.href='marketplace.html?category=literature'">
+                    <div class="category-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="category-title">Literature</h3>
+                    <p class="category-count">2,000+ Notes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Notes Section -->
+    <section class="popular-notes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Top-rated study materials from our community</h2>
+            </div>
+            <div class="notes-grid">
+                <div class="note-card">
+                    <div class="note-preview">
+                        <div class="note-image">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="note-category">Computer Science</div>
+                    </div>
+                    <div class="note-content">
+                        <h3 class="note-title">Complete Data Structures & Algorithms</h3>
+                        <div class="note-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8 (245 reviews)</span>
+                        </div>
+                        <p class="note-seller">by Rahul Kumar • IIT Delhi</p>
+                        <div class="note-price">₹299</div>
+                    </div>
+                    <div class="note-actions">
+                        <button class="btn btn--primary btn--sm">Buy Now</button>
+                        <button class="btn btn--outline btn--sm">Preview</button>
+                    </div>
+                </div>
+                <div class="note-card">
+                    <div class="note-preview">
+                        <div class="note-image">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <div class="note-category">Chemistry</div>
+                    </div>
+                    <div class="note-content">
+                        <h3 class="note-title">Organic Chemistry Mechanisms</h3>
+                        <div class="note-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7 (189 reviews)</span>
+                        </div>
+                        <p class="note-seller">by Priya Sharma • Delhi University</p>
+                        <div class="note-price">₹199</div>
+                    </div>
+                    <div class="note-actions">
+                        <button class="btn btn--primary btn--sm">Buy Now</button>
+                        <button class="btn btn--outline btn--sm">Preview</button>
+                    </div>
+                </div>
+                <div class="note-card">
+                    <div class="note-preview">
+                        <div class="note-image">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="note-category">Business</div>
+                    </div>
+                    <div class="note-content">
+                        <h3 class="note-title">Financial Accounting Fundamentals</h3>
+                        <div class="note-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9 (312 reviews)</span>
+                        </div>
+                        <p class="note-seller">by Amit Patel • IIM Ahmedabad</p>
+                        <div class="note-price">₹249</div>
+                    </div>
+                    <div class="note-actions">
+                        <button class="btn btn--primary btn--sm">Buy Now</button>
+                        <button class="btn btn--outline btn--sm">Preview</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Success stories from our community</h2>
+            </div>
+            <div class="testimonial-carousel">
+                <div class="testimonial-card active">
+                    <p class="testimonial-quote">"I earned ₹15,000 in just 3 months by selling my programming notes! NotesHub Elite made it so easy to monetize my study materials."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AV</div>
+                        <div class="author-info">
+                            <h5>Anjali Verma</h5>
+                            <span>Computer Science Student</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"Found exactly what I needed for my exams. The quality is amazing and saved me weeks of preparation time. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">VS</div>
+                        <div class="author-info">
+                            <h5>Vikram Singh</h5>
+                            <span>Engineering Student</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"Quality notes at affordable prices. Much better than expensive coaching material. This platform is a game-changer!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MJ</div>
+                        <div class="author-info">
+                            <h5>Meera Joshi</h5>
+                            <span>Medical Student</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <button class="indicator active"></button>
+                    <button class="indicator"></button>
+                    <button class="indicator"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monetization Section -->
+    <section class="monetization">
+        <div class="container">
+            <div class="monetization-content">
+                <div class="monetization-text">
+                    <h2 class="section-title">Join thousands of students who are turning their academic success into financial success</h2>
+                    <p class="section-subtitle">Start earning from your study materials today and help fellow students succeed</p>
+                    <div class="earning-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Earn up to ₹50,000 per month</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Instant payouts to your account</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>No upfront costs or hidden fees</span>
+                        </div>
+                    </div>
+                    <div class="cta-section">
+                        <a href="signup.html" class="btn btn--primary btn--lg">Start Selling Today</a>
+                        <a href="marketplace.html" class="btn btn--secondary btn--lg">Browse Notes</a>
+                    </div>
+                </div>
+                <div class="earning-card">
+                    <h4>Potential Monthly Earnings</h4>
+                    <div class="earning-breakdown">
+                        <div class="earning-item">
+                            <span class="earning-label">10 Notes @ ₹200 each</span>
+                            <span class="earning-value">₹2,000</span>
+                        </div>
+                        <div class="earning-item">
+                            <span class="earning-label">20 Sales per month</span>
+                            <span class="earning-value">₹40,000</span>
+                        </div>
+                        <div class="earning-item">
+                            <span class="earning-label">Platform Fee (10%)</span>
+                            <span class="earning-value">- ₹4,000</span>
+                        </div>
+                        <div class="earning-item">
+                            <span class="earning-label"><strong>Your Earnings</strong></span>
+                            <span class="earning-value"><strong>₹36,000</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        NotesHub Elite
+                    </div>
+                    <p class="footer-description">Empowering students to monetize their knowledge and succeed academically through our innovative marketplace platform.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="marketplace.html">Marketplace</a>
+                        <a href="publish.html">Sell Notes</a>
+                        <a href="dashboard.html">Dashboard</a>
+                        <a href="profile.html">Profile</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Support</h3>
+                    <div class="footer-links">
+                        <a href="#">Help Center</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p>Stay updated with the latest notes and platform updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Enter your email">
+                        <button type="submit" class="btn btn--primary">Subscribe</button>
+                    </form>
+                    <div class="payment-badges">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                    <p class="security-text">Secure payments with 256-bit SSL encryption</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NotesHub Elite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

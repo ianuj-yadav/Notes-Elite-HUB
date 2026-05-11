@@ -1,0 +1,22 @@
+{
+  "name": "noteshub-elite",
+  "version": "1.0.0",
+  "description": "Complete student marketplace website for buying and selling study materials",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "live-server --port=3000"
+  },
+  "keywords": [
+    "education",
+    "student",
+    "marketplace",
+    "notes",
+    "study-materials"
+  ],
+  "author": "NotesHub Elite Team",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
