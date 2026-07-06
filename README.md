@@ -1,7 +1,7 @@
 # NotesHub Elite - Complete Website
 
 ## Overview
-NotesHub Elite is a comprehensive platform for students to buy and sell study materials. This package contains a complete multi-page website with modern design and full functionality.
+NotesHub Elite is a comprehensive platform for students to buy and sell study materials. This package contains a complete multi page website with modern design and full functionality.
 
 ## Files Included
 - index.html - Main landing page
