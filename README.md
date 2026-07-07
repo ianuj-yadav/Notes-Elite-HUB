@@ -62,7 +62,6 @@ NotesHub Elite is a comprehensive platform for students to buy and sell study ma
 - Modern gradient backgrounds
 - Smooth animations and transitions
 - Professional color scheme
-- Clean typography
 - Intuitive navigation
 - Mobile-first responsive design
 
