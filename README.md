@@ -34,12 +34,6 @@ NotesHub Elite is a comprehensive platform for students to buy and sell study ma
 3. Navigate through the website using the menu
 4. All functionality is client-side and works offline
 
-## Browser Support
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
-
 ## Technologies Used
 - HTML5
 - CSS3 (Custom Properties, Grid, Flexbox)
