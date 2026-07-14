@@ -39,7 +39,7 @@ NotesHub Elite is a comprehensive platform for students to buy and sell study ma
 - CSS3 (Custom Properties, Grid, Flexbox)
 - Vanilla JavaScript (ES6+)
 - Font Awesome Icons
-- Google Fonts (Inter)
+- Google Fonts ( Inter )
 
 ## Key Functionalities
 - User registration and login simulation
